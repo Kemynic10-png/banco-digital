@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Velho</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Banco Velho</h1>
+            <p>Olá, <strong>Gertrudes Folha</strong> |  Saldo: R$ 8.809,00</p>
+        </header>
+
+        <section class="extrato">
+            <h2>Transações Recentes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>31/08/2026</td>
+                        <td>Smartfit</td>
+                        <td>Academia</td>
+                        <td class="valor-negativo">- R$100,00</td>
+                    </tr>
+                    <tr>
+                        <td>02/09/2026 </td>
+                        <td>Supermercado Costa</td>
+                        <td>Alimentação </td>
+                        <td class="valor-negativo">- R$250,00</td>
+                    </tr>
+                    <tr>
+                   
+                        <td>04/09/2026</td>
+                        <td>Banca Ze da Cove</td>
+                        <td>Alimentação</td>
+                        <td class="valor-negativo">- R$60,00</td>
+
+                       
+                        </tr>
+                        <tr>
+                           
+                            <td>05/09/2026</td>
+                            <td>Netflix</td>
+                            <td>Stream</td>
+                            <td class="valor-negativo">- R$20,90</td>
+                       
+                        </tr>
+                    <tr>
+                        <td>06/09/2026</td>
+                        <td>Buteco Seu Jorge</td>
+                        <td>Alimentação</td>
+                        <td class="valor-negativo">- R$20,00</td>
+                    </tr>
+                    <tr>
+                        <td>08/09/2026</td>
+                        <td>Aposentadoria</td>
+                        <td>Renda</td>
+                        <td class="valor-positivo">+ R$5.000,00</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+   
+</body>
+</html>
+
+CSS
+/* Resetar para zerar tudo*/
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;/*Garante que não quebre o tamanho da caixa*/
+}
+body{
+    background-color:#f8f9ff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 20px;
+}
+.container{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 24px;
+    width: 600px;
+    box-shadow: 0 20px 40px;
+    border: 1px solid #1f262e;
+}
+header{
+    font-size: 28 px;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg,#fff,#8257e5) ;
+   
+}
+
+header p{
+    color: #323335;
+    font-size: 14px;
+    margin-top: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    text-align: left;
+    color: #484f58;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #21265d;
+}
+td{
+    padding: 20px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #161b22;
+}
+
+tbody tr{
+    transition: 0.3s;
+}
+tbody tr :hover{
+cursor: pointer;
+background-color: rgba(130,87,229,0.05);
+}
+.valor-negativo{
+    color: #ff4d4d;
+    font-weight: 500;
+    text-shadow: 0 0 10px;
+}
+
+.valor-positivo{
+    color: #00ff88;
+    font-weight: 500;
+}
